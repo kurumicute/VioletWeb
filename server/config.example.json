@@ -1,0 +1,8 @@
+{
+  "databaseHost": "127.0.0.1:3306",
+  "databaseUser": "root",
+  "databasePassword": "replace-with-your-local-password",
+  "databaseName": "violet_garden",
+  "port": "8081",
+  "staticDir": "../dist"
+}
