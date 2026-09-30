@@ -1,0 +1,101 @@
+dialog {
+  border: 1px solid #d8c9de;
+  border-radius: 8px;
+  background: #faf7f2;
+  color: #65536e;
+  max-width: 800px;
+  width: calc(100% - 35px);
+  padding: 40px;
+  max-height: 90vh;
+  box-shadow: 0 20px 100px #1e0a3040;
+}
+dialog::backdrop {
+  background: #221a35a6;
+  backdrop-filter: blur(7px);
+}
+/* Avoid compositing a full-screen blur behind a continuously updating video. */
+.video-dialog::backdrop {
+  background: #221a35e6;
+  backdrop-filter: none;
+}
+.video-dialog {
+  box-shadow: 0 12px 40px #1e0a3033;
+}
+.close-dialog {
+  position: absolute;
+  right: 12px;
+  top: 7px;
+  background: transparent;
+  font-size: 29px;
+  color: #816888;
+  z-index: 1;
+}
+.trailer-modal h2,
+.letter-modal h2,
+.work-modal h2 {
+  margin: 17px 0;
+  font-size: 25px;
+}
+.trailer-modal iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  aspect-ratio: 16/9;
+  border: 0;
+  background: #30273e;
+  margin-bottom: 20px;
+}
+.letter-modal > .section-kicker {
+  margin-top: 15px;
+}
+.letter-modal > p {
+  font-size: 14px;
+  color: #a18ea8;
+  margin-bottom: 24px;
+}
+.letter-modal label {
+  display: block;
+  font-size: 14px;
+  margin: 20px 0;
+}
+.letter-modal input,
+.letter-modal textarea {
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ddd1e2;
+  background: #fffdf9;
+  color: #63506d;
+  border-radius: 3px;
+  outline-color: #ad94bb;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.letter-modal textarea {
+  resize: vertical;
+  min-height: 260px;
+}
+.letter-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.letter-modal > small {
+  font-size: 10px;
+  color: #a28da9;
+}
+.work-modal > img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: left top;
+  margin-bottom: 24px;
+}
+.work-modal > p {
+  font-size: 13px;
+  line-height: 2.2;
+  margin-bottom: 24px;
+}

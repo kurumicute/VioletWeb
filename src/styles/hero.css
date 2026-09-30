@@ -1,0 +1,247 @@
+.hero {
+  min-height: 680px;
+  height: min(760px, 88vh);
+  position: relative;
+  overflow: hidden;
+  background: #e7e4e9;
+}
+.hero-art {
+  position: absolute;
+  width: 78%;
+  height: 100%;
+  right: -4%;
+  top: 0;
+  object-fit: cover;
+  object-position: left top;
+}
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      #f6f5f2 0%,
+      #f6f5f2fa 20%,
+      #f6f5f2d9 35%,
+      #f6f5f26b 49%,
+      #e8e2ec00 65%
+    ),
+    linear-gradient(0deg, #f6f5f248, transparent 22%);
+}
+.topbar {
+  position: absolute;
+  top: 31px;
+  left: 58px;
+  right: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  color: #807680;
+}
+.topbar a {
+  font-size: 11px;
+  color: #3e3547;
+  background: #faf7f2d9;
+  padding: 9px 15px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+.topbar a span {
+  margin-left: 13px;
+}
+.hero-content {
+  position: relative;
+  padding: 135px 0 90px 58px;
+  max-width: 650px;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #776983;
+}
+.eyebrow > span {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #a88f67;
+}
+.japanese {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #8e8791;
+  margin: 33px 0 14px;
+}
+h1 {
+  font-size: 65px;
+  line-height: 1.43;
+  letter-spacing: 7px;
+  color: #392c49;
+  font-weight: 600;
+}
+.title-dot {
+  color: #9e865f;
+  font-size: 45px;
+  position: absolute;
+}
+.english-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 31px;
+  font-style: italic;
+  color: #8a7998;
+  margin-top: 4px;
+  letter-spacing: 1px;
+}
+.gold-line {
+  width: 38px;
+  height: 1px;
+  background: #ad956d;
+  margin: 25px 0 22px;
+}
+.hero-description {
+  color: #776f7c;
+  font-size: 12px;
+  line-height: 2.25;
+  letter-spacing: 1px;
+}
+.hero-actions {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-top: 30px;
+}
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background: #685078;
+  color: white;
+  padding: 15px 22px;
+  border: 1px solid #685078;
+  border-radius: 3px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.primary-button:hover {
+  background: #4f385f;
+  transform: translateY(-2px);
+}
+.trailer-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.trailer-button > span {
+  border: 1px solid #c8bdcd;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+}
+.hero-tags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 9px;
+  color: #8e8491;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+.hero-tags i {
+  height: 3px;
+  width: 3px;
+  background: #ad9eb6;
+  border-radius: 50%;
+}
+.vertical-note {
+  position: absolute;
+  right: 36px;
+  top: 210px;
+  writing-mode: vertical-rl;
+  letter-spacing: 5px;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 13px;
+  color: white;
+  text-shadow: 0 1px 10px #241b38;
+}
+.scroll-note {
+  position: absolute;
+  bottom: 24px;
+  left: 58px;
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #8d8391;
+}
+.scroll-note span {
+  margin-left: 15px;
+  font-size: 16px;
+}
+.hero-pagination {
+  position: absolute;
+  right: 38px;
+  bottom: 27px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  color: #eee5f1;
+  font-size: 13px;
+}
+.hero-pagination span {
+  width: 45px;
+  height: 1px;
+  background: #ffffff77;
+}
+.hero-pagination b {
+  font-size: 20px;
+  font-weight: 400;
+}
+.quote-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  border-bottom: 1px solid #e6e1e9;
+  background: #f0edf3;
+  padding: 29px 40px;
+}
+.quote-mark {
+  font-family: Georgia, serif;
+  font-size: 59px;
+  color: #b09bbd;
+  height: 39px;
+}
+.quote-strip p {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #655370;
+}
+.quote-strip small {
+  display: block;
+  margin-top: 8px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #9a8ca2;
+}
+.quote-signature {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+  font-style: italic;
+  color: #98849e;
+  margin-left: 50px;
+}
+.quote-strip > svg {
+  color: #b3a1bd;
+  margin-left: 15px;
+}

@@ -1,0 +1,132 @@
+.sidebar {
+  width: 224px;
+  position: fixed;
+  inset: 0 auto 0 0;
+  background: #30273e;
+  color: #e5dfeb;
+  padding: 42px 25px 24px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 8px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.brand small {
+  display: block;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 8px;
+  letter-spacing: 4px;
+  margin-top: 2px;
+}
+.brand-flower {
+  color: #c4b38d;
+}
+.sidebar-rule {
+  height: 1px;
+  background: #ffffff1c;
+  margin: 34px 8px 30px;
+}
+.nav-label {
+  font-size: 8px;
+  color: #a89ab7;
+  letter-spacing: 2px;
+  margin: 0 8px 19px;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.sidebar nav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 15px;
+  border-radius: 5px;
+  color: #c1b7ca;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.sidebar nav a small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  color: #a699b2;
+}
+.sidebar nav a.active,
+.sidebar nav a:hover {
+  background: #ffffff0d;
+  color: #eee6f3;
+}
+.sidebar nav a.active:before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 14px;
+  bottom: 14px;
+  width: 3px;
+  background: #c4b08a;
+}
+.nav-dot {
+  margin-left: auto;
+}
+.active .nav-dot {
+  width: 4px;
+  height: 4px;
+  background: #c5b58e;
+  border-radius: 50%;
+}
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 35px 8px 0;
+}
+.small-flower {
+  color: #c4ae86;
+  font-size: 29px;
+  margin-bottom: 17px;
+}
+.sidebar-bottom p {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 12px;
+  line-height: 2.2;
+  color: #c8bdcf;
+  letter-spacing: 1px;
+}
+.sidebar-bottom > span {
+  display: block;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  color: #97869f;
+  margin-top: 17px;
+}
+.sidebar-bottom button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid #ffffff25;
+  width: 100%;
+  padding: 12px;
+  margin: 27px 0 21px;
+  font-size: 11px;
+}
+.sidebar-bottom button span {
+  margin-left: auto;
+}
+.sidebar-bottom > small {
+  font-size: 7px;
+  letter-spacing: 1.2px;
+  color: #95859f;
+}
+main {
+  margin-left: 224px;
+}

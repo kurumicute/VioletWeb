@@ -1,0 +1,350 @@
+.section-pad {
+  padding: 100px 58px;
+}
+.section-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  color: #9a859f;
+}
+.section-kicker span {
+  width: 27px;
+  height: 1px;
+  background: #baacba;
+}
+h2 {
+  font-size: 34px;
+  line-height: 1.7;
+  letter-spacing: 2px;
+  color: #46374f;
+}
+.story-section {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 50px;
+  align-items: center;
+}
+.story-copy h2 {
+  margin: 21px 0;
+}
+.story-copy p {
+  font-size: 14px;
+  color: #8b818d;
+  line-height: 2.3;
+  letter-spacing: 0.5px;
+  margin-bottom: 13px;
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  background: transparent;
+  color: #72547e;
+  font-size: 11px;
+  padding: 0 0 7px;
+  border-bottom: 1px solid #d6cbdc;
+  letter-spacing: 1px;
+}
+.story-copy .text-link {
+  margin-top: 16px;
+}
+.story-image {
+  position: relative;
+  padding: 10px 0 0 10px;
+}
+.story-image:before {
+  content: '';
+  position: absolute;
+  inset: 0 13px 34px 0;
+  border: 1px solid #d9cddc;
+}
+.story-image > img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-position: left top;
+  display: block;
+}
+.image-caption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 7px;
+  letter-spacing: 1px;
+  color: #9a8d9f;
+  margin-top: 13px;
+  gap: 10px;
+}
+.image-stamp {
+  position: absolute;
+  bottom: 54px;
+  right: -17px;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background: #f5f1e6e8;
+  border: 1px solid #bca88b;
+  outline: 4px solid #f5f1e6d9;
+  color: #988461;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 12px;
+  line-height: 1.6;
+  transform: rotate(8deg);
+}
+.characters-section {
+  background: #f0edf2;
+}
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 44px;
+}
+.section-heading h2 {
+  margin-top: 15px;
+}
+.heading-note {
+  font-size: 9px;
+  color: #9b8e9f;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.character-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  background: #f9f7f4;
+}
+.character-photo {
+  min-width: 0;
+}
+.character-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-position: left top;
+  margin-top: 0;
+  animation: appear 0.5s;
+}
+.character-info {
+  padding: 38px;
+}
+.character-tabs {
+  display: flex;
+  gap: 21px;
+  border-bottom: 1px solid #e5dfe7;
+  margin-bottom: 25px;
+}
+.character-tabs button {
+  background: none;
+  padding: 14px 0 16px;
+  font-size: 13px;
+  color: #948699;
+  border-bottom: 2px solid transparent;
+}
+.character-tabs button.selected {
+  color: #614974;
+  border-color: #86669a;
+}
+.role-label {
+  font-size: 9px;
+  color: #a68b66;
+  letter-spacing: 2px;
+}
+.character-info h3 {
+  font-size: 28px;
+  margin: 12px 0 6px;
+  letter-spacing: 1px;
+}
+.character-english {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #ab96b3;
+}
+.character-info > p {
+  font-size: 14px;
+  line-height: 2.2;
+  color: #8d808f;
+  margin: 17px 0;
+}
+.character-footer {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.character-footer > span {
+  margin-right: auto;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #b2a1b7;
+}
+.character-footer button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d9ccdf;
+  border-radius: 50%;
+  background: transparent;
+  color: #896d99;
+}
+.filters {
+  display: flex;
+  gap: 8px;
+}
+.filters button {
+  font-size: 12px;
+  background: transparent;
+  padding: 12px 16px;
+  color: #938299;
+  border-radius: 3px;
+}
+.filters .selected {
+  background: #eae3ef;
+  color: #6f527f;
+}
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 23px;
+}
+.work-card {
+  background: transparent;
+  padding: 0;
+  text-align: left;
+}
+.work-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.work-image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-position: left top;
+  margin-top: 0;
+  transition: transform 0.6s;
+  transform-origin: left top;
+}
+.work-card:hover img {
+  transform: scale(1.06);
+}
+.work-image > span {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  font-size: 8px;
+  background: #f7f4f3e8;
+  padding: 5px 9px;
+  color: #65516c;
+  border-radius: 2px;
+}
+.work-open {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  border: 1px solid #ffffff80;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #3d2d4844;
+}
+.work-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 17px 0 9px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #9e89a8;
+}
+.work-meta span {
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+.work-card h3 {
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+.work-card p {
+  font-size: 13px;
+  color: #a294a7;
+  margin-top: 9px;
+  line-height: 1.9;
+}
+.memory-section {
+  text-align: center;
+  background: radial-gradient(ellipse at center, #eae2f0, #f2edf4 65%);
+  padding: 100px 35px;
+}
+.memory-section > .section-kicker {
+  display: block;
+  font-size: 8px;
+}
+.memory-flower {
+  font-size: 37px;
+  color: #ab92b8;
+  margin: 18px 0 10px;
+}
+.memory-section h2 {
+  font-size: 30px;
+  animation: appear 0.5s;
+}
+.memory-section > p {
+  font-size: 13px;
+  color: #9987a1;
+  letter-spacing: 1px;
+  margin-top: 13px;
+}
+.memory-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 23px;
+}
+.memory-dots button {
+  padding: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #cfbed7;
+}
+.memory-dots button.selected {
+  background: #80618f;
+  transform: scale(1.3);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px 58px;
+  color: #9a8aa1;
+}
+.footer-brand {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+footer p {
+  text-align: center;
+  font-size: 10px;
+  line-height: 2;
+}
+footer small {
+  font-size: 8px;
+  color: #b1a3b6;
+}
+footer > a:last-child {
+  font-size: 9px;
+}
