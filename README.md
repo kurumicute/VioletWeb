@@ -41,7 +41,7 @@ VioletWeb 是一個以《紫羅蘭永恆花園》為主題的互動介紹網站�
 
 | 類別       | 使用技術                                 |
 | ---------- | ---------------------------------------- |
-| 前端       | React 19、TypeScript、Vite 8             |
+| 前端       | React、TypeScript、Vite             |
 | 樣式       | CSS Grid、Flexbox、CSS Transitions       |
 | 後端       | Go、標準函式庫 net/http                  |
 | 資料庫     | MySQL、database/sql、go-sql-driver/mysql |
