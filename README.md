@@ -224,46 +224,6 @@ VioletWeb/
 
 儲存成功回傳 `id` 與 `isPublic`；列表回傳 `letters` 與 `nextCursor`。提交識別碼不是私人信件的讀取憑證。
 
-## 開發與測試
-
-```sh
-npm run build
-npm run lint
-npm run format:check
-npm run test:server
-```
-
-格式化前端程式碼：`npm run format`。Go 檔案使用 `gofmt`。
-
-### MySQL 整合測試
-
-先完成本機連線設定，再執行：
-
-```powershell
-$env:RUN_MYSQL_TESTS = '1'
-npm run test:server
-Remove-Item Env:RUN_MYSQL_TESTS
-```
-
-macOS / Linux：
-
-```sh
-RUN_MYSQL_TESTS=1 npm run test:server
-```
-
-測試會建立獨立的臨時資料庫，驗證中文與 emoji 保存、私人信件隔離、重試防重複與分頁，完成後移除測試資料庫。
-
-### 瀏覽器測試
-
-```sh
-npx playwright install chromium
-npm run build
-npm run test:e2e
-```
-
-Playwright 使用連接埠 8082 和獨立的 `violet_garden_e2e` 資料庫，驗證公開與私人信件、跨訪客閱讀、失敗重試、草稿及手機版。
-
-測試產物位於 `test-results/`。測試信件保留在測試資料庫，不會寫入 `violet_garden`，也不會上傳至 GitHub。
 
 ## 素材與作品資訊
 
