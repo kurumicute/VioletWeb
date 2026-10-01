@@ -1,6 +1,7 @@
 ﻿# VioletWeb 紫羅蘭永恆花園
 
-線上網站：https://www.kurumicute.com/
+線上網站：https://www.kurumicute.com/ 
+
 VioletWeb 是一個以《紫羅蘭永恆花園》為主題的互動介紹網站，使用 React、TypeScript、Go 與 MySQL 開發，包含故事介紹、角色探索、動畫作品與公開信件收藏。
 
 介面以深紫色、信紙與花園為主題，支援桌面與行動裝置，透過捲動淡入、角色切換與信紙閱讀視窗，呈現作品中關於愛與思念的故事。
